@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/tiendas"
+        android:id="@+id/menu_store"
+        />
+    <item
+        android:title="@string/d_ficit"
+        android:id="@+id/menu_deficit"
+        />
+    <item
+        android:title="@string/configuraci_n"
+        android:id="@+id/menu_options"
+        />
+
+</menu>

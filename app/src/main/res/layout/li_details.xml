@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="28sp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10sp"
+        app:cardCornerRadius="12dp"
+        android:translationZ="@dimen/cardview_default_elevation"
+        android:layout_margin="2sp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/detalles_del_producto"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20sp"/>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp"
+                        android:backgroundTint="?attr/colorOnPrimary"
+                        android:layout_gravity="center_horizontal">
+
+                        <!--image-->
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:importantForAccessibility="no"
+                            android:src="@drawable/seal"/>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <!--Product code-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="@string/c_digo1"
+                            android:layout_marginStart="12dp"/>
+
+                        <TextView
+                            android:id="@+id/code"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cargando"
+                            android:layout_marginStart="4dp"/>
+
+                    </LinearLayout>
+
+                    <!--Name-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="@string/nombre1"
+                            android:layout_marginStart="12dp"/>
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cargando"
+                            android:layout_marginStart="4dp"/>
+
+                    </LinearLayout>
+
+                    <!--Brand-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="@string/marca1"
+                            android:layout_marginStart="12dp"/>
+
+                        <TextView
+                            android:id="@+id/brand"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cargando"
+                            android:layout_marginStart="4dp"/>
+
+                    </LinearLayout>
+
+                    <!--Store-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="@string/tienda1"
+                            android:layout_marginStart="12dp"/>
+
+                        <TextView
+                            android:id="@+id/store"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cargando"
+                            android:layout_marginStart="4dp"/>
+
+                    </LinearLayout>
+
+                    <!--Store-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="@string/carpeta"
+                            android:layout_marginStart="12dp"/>
+
+                        <TextView
+                            android:id="@+id/file"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cargando"
+                            android:layout_marginStart="4dp"/>
+
+                    </LinearLayout>
+
+                    <!--Amount-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="@string/cantidad1"
+                            android:layout_marginStart="12dp"/>
+
+                        <TextView
+                            android:id="@+id/amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cargando"
+                            android:layout_marginStart="4dp"/>
+
+                    </LinearLayout>
+
+                    <!--Deficit-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="@string/d_ficit1"
+                            android:layout_marginStart="12dp"/>
+
+                        <TextView
+                            android:id="@+id/deficit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cargando"
+                            android:layout_marginStart="4dp"/>
+
+                    </LinearLayout>
+
+                    <!--BuyPrice-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="@string/precio_de_compra1"
+                            android:layout_marginStart="12dp"/>
+
+                        <TextView
+                            android:id="@+id/buy_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cargando"
+                            android:layout_marginStart="4dp"/>
+
+                    </LinearLayout>
+
+                    <!--salesPrice-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="@string/precio_de_venta1"
+                            android:layout_marginStart="12dp"/>
+
+                        <TextView
+                            android:id="@+id/salePrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cargando"
+                            android:layout_marginStart="4dp"/>
+
+                    </LinearLayout>
+
+                    <!--Description-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="@string/descripci_n1"
+                            android:layout_marginStart="12dp"/>
+
+                        <TextView
+                            android:id="@+id/descr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cargando"
+                            android:layout_marginStart="4dp"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/aceptar"
+                        android:text="@string/aceptar1"
+                        android:layout_marginBottom="12dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

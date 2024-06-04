@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/entrada1"
+        android:id="@+id/menu_entry"
+        />
+    <item
+        android:title="@string/salida"
+        android:id="@+id/menu_sales"
+        />
+    <item
+        android:title="@string/editar"
+        android:id="@+id/menu_edit"
+        />
+    <item
+        android:title="@string/eliminar"
+        android:id="@+id/menu_delete"
+        />
+    <item
+        android:title="@string/detalles"
+        android:id="@+id/menu_details"
+        />
+
+</menu>

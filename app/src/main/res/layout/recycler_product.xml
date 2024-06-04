@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:translationZ="4dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp">
+
+        <!--Cl Container-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--cv_image-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:translationZ="4dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <!--IV Picture Car-->
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="?attr/colorOnPrimary"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/baseline_image_search_24"/>
+
+
+            </androidx.cardview.widget.CardView>
+            <!--Cl Container InfoDriver-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clContainer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/cv_image"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <!--Tv NameS-->
+                <TextView
+                    android:id="@+id/tvNameS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/nombre1"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <!--Tv Name-->
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/cargando"
+                    app:layout_constraintStart_toEndOf="@id/tvNameS"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <!--Tv PhoneS-->
+                <TextView
+                    android:id="@+id/tvAmountS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/cantidad1"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@id/tvNameS"
+                    app:layout_constraintTop_toBottomOf="@id/tvNameS" />
+
+                <!--Tv Phone-->
+                <TextView
+                    android:id="@+id/tvAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/cargando"
+                    app:layout_constraintStart_toEndOf="@id/tvAmountS"
+                    app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+                <!--Tv Location-->
+                <TextView
+                    android:id="@+id/tvBrandS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/marca1"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@id/tvNameS"
+                    app:layout_constraintTop_toBottomOf="@id/tvAmountS" />
+
+                <!--Tv Location-->
+                <TextView
+                    android:id="@+id/tvBrand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/cargando"
+                    app:layout_constraintStart_toEndOf="@id/tvBrandS"
+                    app:layout_constraintTop_toBottomOf="@id/tvAmount" />
+
+                <!--Tv Sale Price-->
+                <TextView
+                    android:id="@+id/tvSalePriceS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/precio_de_venta1"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@id/tvNameS"
+                    app:layout_constraintTop_toBottomOf="@id/tvBrandS" />
+
+                <!--Tv Sale Price-->
+                <TextView
+                    android:id="@+id/tvSalePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/cargando"
+                    app:layout_constraintStart_toEndOf="@id/tvSalePriceS"
+                    app:layout_constraintTop_toBottomOf="@id/tvBrand" />
+
+
+
+
+                <ImageView
+                    android:id="@+id/menu_option"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/men_de_opciones"
+                    android:src="@drawable/baseline_more_vert_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="?attr/colorPrimary">
+
+                </ImageView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
